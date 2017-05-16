@@ -1,0 +1,53 @@
+define({
+	text:{
+		'优选品牌':{
+			name:'页眉优选品牌链接',
+			context:'.my-header',
+			page:'*',
+			id:'T_0004'
+		},
+		'蘑菇社区':{
+			name:'页眉蘑菇社区链接',
+			context:'.my-header',
+			page:'*',
+			id:'T_0005'
+		},
+		'APP下载':{
+			name:'页眉App下载链接',
+			context:'.my-header',
+			page:'*',
+			id:'T_0007'
+		},
+		'伙伴登录':{
+			name:'页眉伙伴登录链接',
+			context:'.my-header',
+			page:'*',
+			id:'T_0008'
+		},
+		'租客登录':{
+			name:'页眉租客登录链接',
+			context:'.my-header',
+			page:'*',
+			id:'T_0009'
+		}
+	},
+	selector:{
+		'.city-change a':{
+			name:'页眉城市切换',
+			page:'*',
+			id:'T_0001'
+		},
+		'.findRoom a':{
+			name:'页眉立即找房',
+			page:'*',
+			id:'T_0002'
+		}
+	},
+	enter:{
+		'.my-search':{
+			name:'顶部搜索框',
+			page:'*',
+			id:'T_0003'
+		}
+	}
+});

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Examples</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<!-- 引用css  -->
+<style type="text/css">
+	input{
+		border:1px solid #f00;
+	};
+</style>
+<link rel="stylesheet" href="../../dist/css/index.css" />
+</head>
+<body>
+<p>1111142242</p>
+<div id="test" class="test" style="border:1px solid #f00">点击按钮</div>
+<button class="btn">我是按钮</button>
+<div class="bgLayer"></div>
+<input type="radio" checked="true" />
+<div id="">我的空id</div>
+<div class="dialog">
+	<h4>我在头部</h4>
+	<p>我在弹层内容区域</p>
+</div>
+<img src="../images/android.jpg" alt="我是图片">
+</body>
+<script type="text/javascript" src="../js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript">
+	$('#test').click(function(){
+		$('.bgLayer, .dialog').show();
+	});
+	$('.bgLayer').click(function(event) {
+		$('.bgLayer, .dialog').hide();
+	});
+</script>
+</html>

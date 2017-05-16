@@ -1,0 +1,1 @@
+define({index:"P_0001",list:"P_0002",room:"P_0003","brand/list":"P_0004","brand/home":"P_0005",home:"P_0006"});

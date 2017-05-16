@@ -1,0 +1,47 @@
+//某品牌主页(brand/home)，品牌房源库(brand/pool)，创始人访谈(brand/intro)，官方评测(brand/info)
+define({
+	text:{
+		'优选品牌':{
+			context:'.headerSub-wrap',
+			name:'品牌模块导航“优选品牌”',
+			page:['brand/home','brand/pool','brand/intro','brand/info'],
+			id:'T_0001'
+		},
+		'房源库':{
+			context:'.headerSub-wrap',
+			name:'品牌模块导航“房源库”',
+			page:['brand/home','brand/pool','brand/intro','brand/info'],
+			id:'T_0002'
+		},
+		'创始人访谈':{
+			context:'.headerSub-wrap',
+			name:'品牌模块导航“创始人访谈”',
+			page:['brand/home','brand/pool','brand/intro','brand/info'],
+			id:'T_0003'
+		},
+		'官方评测':{
+			context:'.headerSub-wrap',
+			name:'品牌模块导航“官方评测”',
+			page:['brand/home','brand/pool','brand/intro','brand/info'],
+			id:'T_0006'
+		},
+		'查看更多“推荐房源”':{
+			context:'.1mm',
+			name:'品牌页更多推荐房源链接',
+			page:'brand/home',
+			id:'T_0007'
+		}
+	},
+	selector:{
+		'.brand-empower':{
+			name:'品牌授权证书',
+			page:'brand/home',
+			id:'T_0005'
+		},
+		'.brand-exhibition a':{
+			name:'品牌页推荐房源',
+			page:'brand/home',
+			id:'T_0006'
+		}
+	}
+});

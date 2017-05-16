@@ -1,0 +1,72 @@
+@import "common/_reset";
+
+$red: #f00;
+$height: 20px;
+$bgWhite: #fff;
+
+/*透明度，层上下级，宽，高，背景色*/
+@mixin transparent($opacity,$zIndex,$width,$height,$bgColor){
+	filter:alpha(opacity=($opacity*100));
+	opacity: $opacity;
+	z-index: $zIndex;
+	width: $width;
+	height:$height;
+	left:0;
+	top:0;
+	position: fixed;
+	background: $bgColor;
+}
+@mixin isShow($bool){
+	@if $bool > 0{
+		display: block;
+	}@else{
+		display: none;
+	}
+}
+
+.center{
+	text-align: center;
+}
+
+.border{
+	border:1px solid #f00;
+}
+.btn{
+	background: url(../images/aman.jpg);
+	background-size:100% 100%;
+	width: 100px;
+	height: 50px;
+}
+.test {
+    background: $red;
+    color:$bgWhite;
+    width: 20%;
+    @extend .center;
+}
+
+.bgLayer{
+	@include transparent(0.3,10,100%,100%,#000);
+	@include isShow(0);
+}
+.dialog {
+	@include isShow(0);
+	@include transparent(1,100,50%,30%,#fff);
+	left:50%;
+	top:50%;
+	margin-left:-25%;
+	margin-top:-15%;
+	border-radius: 10px;
+	transform:rotate(0deg);
+	overflow: hidden;
+	h4{
+		background: #f00;
+		line-height:2*$height;
+		color: $bgWhite;
+		@extend .center;
+		@extend .border;
+	}
+	p{
+		padding:$height;
+		line-height: $height ;
+	}
+}

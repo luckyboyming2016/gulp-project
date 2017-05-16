@@ -1,0 +1,25 @@
+{
+  "name": "gulp_demo",
+  "version": "1.0.0",
+  "description": "test gulp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "liming",
+  "license": "ISC",
+  "devDependencies": {
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-clean-css": "^3.2.0",
+    "gulp-compass": "^2.1.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-imagemin": "^3.2.0",
+    "gulp-make-css-url-version": "^0.0.13",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^2.1.2",
+    "imagemin-pngquant": "^5.0.0"
+  }
+}
